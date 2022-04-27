@@ -1,0 +1,12 @@
+.stilus
+{
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aqua;
+    text-shadow: 1cm;
+    color: blueviolet;
+    font-weight: bold;
+    padding: 30cm;
+    margin: 20cm;
+    box-shadow: 5px 5px 5px;
+}
