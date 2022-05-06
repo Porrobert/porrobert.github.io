@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+function sokszamosszead(){
+    var osszeg=0;
+    for (elem of arguments){
+        osszeg+=elem;
+    }
+    return osszeg;
+}
+
+console.log("Arguments tömb használatával összeadás:"+sokszamosszead(1,2,3,4));
+
+function pozitivnegativ(){
+    var pozitivok=0
+    for (elem of arguments){
+    if (elem>0)
+        pozitivok+=1
+    }
+    return pozitivok;
+}
+console.log("Arguments tömb használatával összeadás:"+pozitivnegativ(1,-1,2,0,-3,5));
+
+var eldontes_nyil=(szam1,szam2)=>{
+if (szam1>szam2)
+    return szam1;
+else if (szam1<szam2)
+    return szam2;
+else
+    return szam1;
+
+}
+console.log("Két szám közül a nagyobb nyíl függvénnyel: "+eldontes_nyil(4,4));
+
+
+var beszam=prompt("Adj meg két számot szóközzel: ");
+var kecske=beszam.split(" ");
+var szam1=parseInt(kecske[0]);
+var szam2=parseInt(kecske[1]);
+if (szam1>0 && szam2<0 || szam1<0 && szam2>0)
+    console.log("Egyik pozitív, másik negatív!");
+else if(szam1>0 && szam2>0)
+    console.log("Mindkettő pozitív!")
+else
+    console.log("Mindkettő negatív!")
+
+
+
+    </script>
+
+
+
+    
+</body>
+</html>
